@@ -8,7 +8,7 @@
       </el-col>
       <el-col :span="12" style="text-align: right">
         <el-button type="primary" link @click="openBlog">
-          返回博客主页
+          source code
         </el-button>
       </el-col>
     </el-row>
@@ -69,10 +69,6 @@
         </el-card>
       </el-main>
       <el-footer style="display: flex; justify-content: center; align-items: center;">
-        <el-card style="width: 100%; max-width: 800px; text-align: center;">
-          <p>简幻欢非官方交流群：963075840  </p>
-          <p>服务器交流群：664085606 </p>
-        </el-card>
       </el-footer>
     </el-container>
   </div>
@@ -94,7 +90,7 @@ export default {
     const responseOutput = ref('');
     const copyButtonText = ref('复制链接');
     const openBlog = () => {
-  window.open('https://simpfun.tx648.cn')
+  window.open('https://github.com/shenbimicro233/upload-log-with-mclo.gs')
 };
     
     const nextStep = () => {
