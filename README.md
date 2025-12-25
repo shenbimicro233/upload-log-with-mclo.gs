@@ -5,7 +5,7 @@
 - `npm run build`
 
 # 示例
-[](https://mclo.ideafox.top/)
+[点击访问链接](https://mclo.ideafox.top/)
 
 
 
