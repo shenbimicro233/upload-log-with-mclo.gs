@@ -135,14 +135,17 @@ export default {
         return;
       }
 
-      const formData = new FormData();
       let content = uploadMethod.value === 'paste' ? logContent.value : fileContent.value;
-
-      formData.append('content', content);
+      
+      // 手动构建URL编码的表单数据
+      const formData = `content=${encodeURIComponent(content)}`;
 
       try {
         const res = await fetch('https://api.mclo.gs/1/log', {
           method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
           body: formData,
         });
         const data = await res.json();
